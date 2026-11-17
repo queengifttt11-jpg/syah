@@ -1,0 +1,3211 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width,
+  initial-scale=1.0,
+  maximum-scale=1.0,
+  user-scalable=no,
+  viewport-fit=cover"
+>
+
+<title>Aiman's Birthday🎊🫂!!</title>
+
+
+<!-- FONT -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin
+>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap"
+  rel="stylesheet"
+>
+
+
+<style>
+
+/* ==================================================
+   RESET
+================================================== */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+
+  -webkit-tap-highlight-color:transparent;
+  -webkit-touch-callout:none;
+}
+
+html,
+body{
+  width:100%;
+  height:100%;
+
+  margin:0;
+  padding:0;
+
+  overflow:hidden;
+
+  background:#000;
+}
+
+body{
+  font-family:
+    "Montserrat",
+    sans-serif;
+
+  color:#fff;
+
+  overscroll-behavior:none;
+}
+
+
+/* ==================================================
+   MAIN APP
+================================================== */
+
+.app{
+
+  width:100%;
+  height:100dvh;
+
+  min-height:100svh;
+
+  display:flex;
+
+  justify-content:center;
+  align-items:center;
+
+  background:#000;
+}
+
+
+.book{
+
+  position:relative;
+
+  width:100%;
+  height:100%;
+
+  max-width:600px;
+
+  overflow:hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 30%,
+      rgba(255,255,255,.045),
+      transparent 38%
+    ),
+
+    linear-gradient(
+      145deg,
+      #350408,
+      #610a11 50%,
+      #350408
+    );
+}
+
+
+/* ==================================================
+   PAGE
+================================================== */
+
+.page{
+
+  position:absolute;
+
+  pointer-events:none;
+
+  inset:0;
+
+  width:100%;
+  height:100%;
+
+  display:none;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  align-items:center;
+
+  padding:
+    max(25px,env(safe-area-inset-top))
+    18px
+    max(70px,env(safe-area-inset-bottom))
+    18px;
+
+  overflow:hidden;
+
+  opacity:0;
+}
+
+
+.page.active{
+
+  display:flex;
+
+  pointer-events:auto;
+
+  animation:
+    pageIn .5s ease forwards;
+}
+
+
+@keyframes pageIn{
+
+  from{
+
+    opacity:0;
+
+    transform:
+      scale(.97);
+
+  }
+
+  to{
+
+    opacity:1;
+
+    transform:
+      scale(1);
+
+  }
+
+}
+
+
+/* ==================================================
+   FONT
+================================================== */
+
+.script{
+
+  font-family:
+    "Great Vibes",
+    cursive;
+}
+
+
+/* ==================================================
+   SPARKLES
+================================================== */
+
+.sparkles span{
+
+  position:absolute;
+
+  color:#fff;
+
+  opacity:.7;
+
+  pointer-events:none;
+
+  animation:
+    sparkle 2.3s infinite alternate;
+}
+
+
+.sparkles span:nth-child(1){
+
+  left:9%;
+  top:14%;
+
+  font-size:14px;
+}
+
+
+.sparkles span:nth-child(2){
+
+  right:11%;
+  top:22%;
+
+  font-size:10px;
+
+  animation-delay:.5s;
+}
+
+
+.sparkles span:nth-child(3){
+
+  left:14%;
+  bottom:20%;
+
+  font-size:12px;
+
+  animation-delay:1s;
+}
+
+
+.sparkles span:nth-child(4){
+
+  right:12%;
+  bottom:14%;
+
+  font-size:9px;
+
+  animation-delay:1.5s;
+}
+
+
+@keyframes sparkle{
+
+  from{
+
+    opacity:.2;
+
+    transform:
+      scale(.7)
+      rotate(0deg);
+
+  }
+
+  to{
+
+    opacity:1;
+
+    transform:
+      scale(1.2)
+      rotate(20deg);
+
+  }
+
+}
+
+
+/* ==================================================
+   SLIDE 1
+================================================== */
+
+.envelope-page{
+
+  text-align:center;
+
+  cursor:pointer;
+}
+
+
+.envelope-title{
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:
+    clamp(
+      42px,
+      12vw,
+      65px
+    );
+
+  line-height:1;
+
+  color:#f8eeee;
+
+  margin-bottom:
+    clamp(
+      25px,
+      7vw,
+      40px
+    );
+
+  text-shadow:
+    0 3px 10px
+    rgba(0,0,0,.55);
+}
+
+
+.my-envelope{
+
+  display:block;
+
+  width:
+    min(
+      72vw,
+      330px
+    );
+
+  max-width:330px;
+
+  height:auto;
+
+  margin:
+    0 auto 25px;
+
+  object-fit:contain;
+
+  user-select:none;
+
+  filter:
+    drop-shadow(
+      0 18px 18px
+      rgba(0,0,0,.55)
+    );
+
+  transition:
+    transform .2s ease;
+}
+
+
+.my-envelope.touching{
+
+  transform:
+    scale(.92);
+}
+
+
+.tap-text{
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:
+    clamp(
+      28px,
+      8vw,
+      42px
+    );
+
+  color:white;
+
+  animation:
+    tapPulse 1.5s infinite;
+
+  cursor:pointer;
+
+  text-align:center;
+}
+
+
+@keyframes tapPulse{
+
+  0%,
+  100%{
+
+    opacity:1;
+
+    transform:
+      translateY(0);
+
+  }
+
+  50%{
+
+    opacity:.5;
+
+    transform:
+      translateY(4px);
+
+  }
+
+}
+
+
+/* ==================================================
+   PAGE 2
+   OPEN ENVELOPE
+   GAMBAR ENVELOPE DARI USER
+================================================== */
+
+#p2{
+
+  position:absolute;
+
+  inset:0;
+
+  width:100%;
+  height:100%;
+
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(255,255,255,.025),
+      transparent 45%
+    ),
+
+    #5b0710;
+
+  overflow:hidden;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+}
+
+
+/* ==================================================
+   BIRTHDAY CARD
+================================================== */
+
+#p2 .birthday-card{
+
+  position:relative;
+
+  width:100%;
+  height:100%;
+
+  max-width:540px;
+  max-height:540px;
+
+  display:flex;
+
+  align-items:center;
+  justify-content:center;
+}
+
+
+/* ==================================================
+   SUBTLE BACKGROUND
+================================================== */
+
+#p2 .birthday-card::before{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+    radial-gradient(
+      circle at 20% 25%,
+      rgba(255,255,255,.025),
+      transparent 2px
+    ),
+
+    radial-gradient(
+      circle at 82% 75%,
+      rgba(255,255,255,.02),
+      transparent 2px
+    );
+
+  pointer-events:none;
+}
+
+
+/* ==================================================
+   ENVELOPE IMAGE DARI USER
+================================================== */
+
+#p2 .my-envelope-design{
+
+  position:absolute;
+
+  width:72%;
+
+  max-width:390px;
+
+  height:auto;
+
+  left:50%;
+
+  top:52%;
+
+  transform:
+    translate(-50%,-50%);
+
+  z-index:2;
+
+  display:block;
+
+  object-fit:contain;
+
+  pointer-events:none;
+
+  user-select:none;
+
+  filter:
+    drop-shadow(
+      0 14px 18px
+      rgba(0,0,0,.38)
+    );
+}
+
+
+/* ==================================================
+   FOTO
+================================================== */
+
+#p2 .photo-strip{
+
+  position:absolute;
+
+  z-index:6;
+
+  top:14%;
+
+  left:50%;
+
+  width:55%;
+
+  transform:
+    translateX(-50%);
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:flex-end;
+
+  gap:6px;
+}
+
+
+/* ==================================================
+   FOTO POLAROID
+================================================== */
+
+#p2 .photo-strip img{
+
+  width:29%;
+
+  aspect-ratio:3 / 4;
+
+  object-fit:cover;
+
+  background:#fff;
+
+  padding:
+    4px
+    4px
+    12px;
+
+  border:0;
+
+  box-shadow:
+    0 5px 12px
+    rgba(0,0,0,.45);
+
+  display:block;
+}
+
+
+/* FOTO 1 */
+
+#p2 .photo-strip img:nth-child(1){
+
+  transform:
+    rotate(-7deg)
+    translateY(7px);
+}
+
+
+/* FOTO 2 */
+
+#p2 .photo-strip img:nth-child(2){
+
+  transform:
+    rotate(2deg)
+    translateY(-5px);
+
+  z-index:2;
+}
+
+
+/* FOTO 3 */
+
+#p2 .photo-strip img:nth-child(3){
+
+  transform:
+    rotate(-6deg)
+    translateY(7px);
+}
+
+
+/* ==================================================
+   PAGE 2 TEXT
+   POSISI SUDAH DINAIKKAN
+================================================== */
+
+#p2 .birthday-text{
+
+  position:absolute;
+
+  z-index:7;
+
+  /*
+    DINAikKAN DARI 31%
+    MENJADI 24.5%
+  */
+
+  top:24.5%;
+
+  left:50%;
+
+  width:53%;
+
+  transform:
+    translateX(-50%);
+
+  text-align:center;
+
+  color:#64151d;
+
+  pointer-events:none;
+}
+
+
+/* ==================================================
+   HEART ATAS
+================================================== */
+
+#p2 .tiny-heart{
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:18px;
+
+  line-height:1;
+
+  color:#a55d65;
+
+  margin-bottom:3px;
+}
+
+
+/* ==================================================
+   HAPPY BIRTHDAY
+================================================== */
+
+#p2 .birthday-text h1{
+
+  margin:0;
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:
+    clamp(
+      43px,
+      10vw,
+      67px
+    );
+
+  font-weight:400;
+
+  line-height:.78;
+
+  letter-spacing:-1px;
+
+  color:#64151d;
+
+  text-shadow:
+    0 1px 0
+    rgba(255,255,255,.8);
+}
+
+
+/* ==================================================
+   ORNAMENT
+================================================== */
+
+#p2 .ornament{
+
+  margin-top:12px;
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:14px;
+
+  line-height:1;
+
+  color:#a55d65;
+}
+
+
+/* ==================================================
+   SAYANGG
+================================================== */
+
+#p2 .letter-name{
+
+  margin-top:7px;
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:15px;
+
+  letter-spacing:4px;
+
+  color:#64151d;
+}
+
+
+/* ==================================================
+   TANGGAL
+================================================== */
+
+#p2 .letter-date{
+
+  margin-top:7px;
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:9px;
+
+  letter-spacing:2.5px;
+
+  color:#8c4d54;
+}
+
+
+/* ==================================================
+   SPARKLE PAGE 2
+================================================== */
+
+#p2::before{
+
+  content:"✦";
+
+  position:absolute;
+
+  top:12%;
+  left:7%;
+
+  color:#fff;
+
+  font-size:13px;
+
+  z-index:20;
+
+  opacity:.85;
+
+  pointer-events:none;
+}
+
+
+#p2::after{
+
+  content:"✧";
+
+  position:absolute;
+
+  top:17%;
+  right:8%;
+
+  color:#fff;
+
+  font-size:13px;
+
+  z-index:20;
+
+  opacity:.85;
+
+  pointer-events:none;
+}
+
+
+/* ==================================================
+   TAP FOR SURPRISE PAGE 2
+================================================== */
+
+#p2 .tap-text{
+
+  position:absolute;
+
+  z-index:20;
+
+  left:50%;
+
+  bottom:7%;
+
+  transform:
+    translateX(-50%);
+
+  color:#d8aeb1;
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:27px;
+
+  white-space:nowrap;
+
+  cursor:pointer;
+
+  animation:
+    softPulse 1.7s infinite;
+}
+
+
+@keyframes softPulse{
+
+  0%,
+  100%{
+
+    opacity:.55;
+
+  }
+
+  50%{
+
+    opacity:1;
+
+  }
+
+}
+
+
+/* ==================================================
+   SLIDE 3
+================================================== */
+
+.heading{
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-weight:400;
+
+  font-size:
+    clamp(
+      46px,
+      13vw,
+      72px
+    );
+
+  text-align:center;
+
+  margin-bottom:40px;
+}
+
+
+.surprises{
+
+  width:100%;
+
+  max-width:390px;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+  gap:8px;
+}
+
+
+.surprise{
+
+  border:0;
+
+  background:none;
+
+  color:#fff;
+
+  cursor:pointer;
+
+  text-align:center;
+}
+
+
+.iconbox{
+
+  width:100%;
+
+  aspect-ratio:1;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  background:
+    linear-gradient(
+      145deg,
+      #fff,
+      #f0eded
+    );
+
+  border:
+    2px solid
+    rgba(255,255,255,.55);
+
+  border-radius:18px;
+
+  font-size:
+    clamp(
+      34px,
+      10vw,
+      55px
+    );
+
+  box-shadow:
+    0 10px 20px
+    rgba(0,0,0,.55);
+
+  transition:
+    transform .2s ease;
+}
+
+
+.surprise:active .iconbox{
+
+  transform:
+    scale(.9);
+}
+
+
+.surprise .label{
+
+  display:block;
+
+  margin-top:9px;
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:
+    clamp(
+      15px,
+      4.3vw,
+      22px
+    );
+
+  font-style:italic;
+
+  text-decoration:underline;
+}
+
+
+/* ==================================================
+   SLIDE 4
+================================================== */
+
+.split{
+
+  width:100%;
+
+  max-width:430px;
+
+  display:grid;
+
+  grid-template-columns:
+    .8fr 1.2fr;
+
+  gap:14px;
+
+  align-items:center;
+}
+
+
+.big-title{
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:
+    clamp(
+      38px,
+      11vw,
+      58px
+    );
+
+  line-height:.75;
+
+  text-transform:uppercase;
+}
+
+
+.big-title em{
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:1.05em;
+
+  font-weight:400;
+
+  text-transform:none;
+}
+
+
+.sub{
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:
+    clamp(
+      12px,
+      3.5vw,
+      17px
+    );
+
+  line-height:1.2;
+
+  margin-top:20px;
+}
+
+
+.collage{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:5px;
+}
+
+
+.polaroid{
+
+  background:#fff;
+
+  padding:
+    4px
+    4px
+    10px;
+
+  box-shadow:
+    0 5px 10px
+    rgba(0,0,0,.5);
+
+  transform:
+    rotate(var(--r));
+}
+
+
+.polaroid img{
+
+  display:block;
+
+  width:100%;
+
+  aspect-ratio:1;
+
+  object-fit:cover;
+}
+
+
+/* ==================================================
+   SLIDE 5
+================================================== */
+
+.calendar-title{
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:
+    clamp(
+      48px,
+      13vw,
+      72px
+    );
+
+  font-weight:400;
+
+  margin-bottom:20px;
+}
+
+
+.calendar-wrap{
+
+  width:
+    min(
+      90vw,
+      370px
+    );
+
+  background:#fff;
+
+  color:#111;
+
+  border-radius:20px;
+
+  padding:18px;
+
+  box-shadow:
+    0 18px 30px
+    rgba(0,0,0,.6);
+}
+
+
+.calendar{
+
+  width:100%;
+
+  border-collapse:collapse;
+
+  font-family:
+    Arial,
+    sans-serif;
+}
+
+
+.calendar th{
+
+  font-size:11px;
+
+  padding:5px;
+}
+
+
+.calendar td{
+
+  position:relative;
+
+  text-align:center;
+
+  padding:7px 2px;
+
+  font-size:
+    clamp(
+      11px,
+      3vw,
+      15px
+    );
+}
+
+
+.calendar .special{
+
+  color:#8a1018;
+
+  font-weight:bold;
+}
+
+
+.calendar .special::after{
+
+  content:"♡";
+
+  position:absolute;
+
+  left:50%;
+  top:50%;
+
+  transform:
+    translate(-50%,-52%);
+
+  font-size:35px;
+
+  color:#8a1018;
+}
+
+
+/* ==================================================
+   SLIDE 6
+================================================== */
+
+.content-card{
+
+  width:
+    min(
+      90vw,
+      390px
+    );
+
+  max-height:75%;
+
+  overflow:auto;
+
+  background:#fff;
+
+  color:#4b0a10;
+
+  border-radius:20px;
+
+  padding:
+    25px
+    20px;
+
+  text-align:center;
+
+  box-shadow:
+    0 18px 35px
+    rgba(0,0,0,.6);
+}
+
+
+.content-card h2{
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size:
+    clamp(
+      48px,
+      13vw,
+      72px
+    );
+
+  font-weight:400;
+
+  margin-bottom:10px;
+}
+
+
+.content-card p{
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:
+    clamp(
+      17px,
+      4.5vw,
+      23px
+    );
+
+  line-height:1.35;
+
+  margin-bottom:12px;
+}
+
+
+audio{
+
+  width:100%;
+
+  margin-top:18px;
+}
+
+
+/* ==================================================
+   SLIDE 7
+================================================== */
+
+.gift-big{
+
+  font-size:
+    clamp(
+      100px,
+      30vw,
+      165px
+    );
+
+  animation:
+    giftFloat 2s infinite ease-in-out;
+}
+
+
+@keyframes giftFloat{
+
+  50%{
+
+    transform:
+      translateY(-12px)
+      rotate(3deg);
+
+  }
+
+}
+
+
+/* ==================================================
+   FLOATING HEARTS
+================================================== */
+
+.heart{
+
+  position:absolute;
+
+  bottom:-30px;
+
+  z-index:200;
+
+  color:#ff5d68;
+
+  pointer-events:none;
+
+  animation:
+    heartRise linear forwards;
+}
+
+
+@keyframes heartRise{
+
+  to{
+
+    transform:
+      translateY(-115vh)
+      translateX(var(--drift))
+      rotate(360deg);
+
+    opacity:0;
+
+  }
+
+}
+
+
+/* ==================================================
+   NAVIGATION
+================================================== */
+
+.nav{
+
+  position:absolute;
+
+  z-index:100;
+
+  bottom:
+    max(
+      16px,
+      env(safe-area-inset-bottom)
+    );
+
+  left:50%;
+
+  transform:
+    translateX(-50%);
+
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
+}
+
+
+.nav button{
+
+  width:36px;
+  height:36px;
+
+  border-radius:50%;
+
+  border:
+    1px solid
+    rgba(255,255,255,.3);
+
+  background:
+    rgba(0,0,0,.4);
+
+  color:#fff;
+
+  font-size:20px;
+
+  cursor:pointer;
+}
+
+
+.dots{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:4px;
+}
+
+
+.dot{
+
+  width:5px;
+  height:5px;
+
+  border-radius:50%;
+
+  background:
+    rgba(255,255,255,.3);
+}
+
+
+.dot.active{
+
+  width:17px;
+
+  background:#fff;
+
+  border-radius:10px;
+}
+
+
+/* ==================================================
+   RESPONSIVE - HP KECIL
+================================================== */
+
+@media(max-width:380px){
+
+  .page{
+
+    padding-left:14px;
+
+    padding-right:14px;
+  }
+
+
+  /* PAGE 1 */
+
+  .envelope-title{
+
+    font-size:43px;
+
+    margin-bottom:25px;
+  }
+
+
+  .my-envelope{
+
+    width:70vw;
+
+    margin-bottom:20px;
+  }
+
+
+  /* ==============================
+     PAGE 2
+  ============================== */
+
+  #p2 .my-envelope-design{
+
+    width:74%;
+
+  }
+
+
+  #p2 .photo-strip{
+
+    width:57%;
+
+    top:14%;
+
+  }
+
+
+  #p2 .birthday-text{
+
+    width:55%;
+
+    /*
+      POSISI SUDAH DINAIKKAN
+    */
+
+    top:24%;
+
+  }
+
+
+  #p2 .birthday-text h1{
+
+    font-size:41px;
+
+  }
+
+
+  #p2 .letter-name{
+
+    font-size:14px;
+
+    letter-spacing:3px;
+
+  }
+
+
+  #p2 .letter-date{
+
+    font-size:8px;
+
+  }
+
+
+  #p2 .tap-text{
+
+    font-size:24px;
+
+    bottom:6%;
+
+  }
+
+
+  /* ==============================
+     PAGE 3
+  ============================== */
+
+  .heading{
+
+    font-size:46px;
+
+    margin-bottom:28px;
+  }
+
+
+  .iconbox{
+
+    border-radius:13px;
+  }
+
+
+  .surprise .label{
+
+    font-size:14px;
+  }
+
+
+  /* CONTENT */
+
+  .content-card{
+
+    padding:
+      22px
+      17px;
+  }
+
+}
+
+
+/* ==================================================
+   LAYAR PENDEK
+================================================== */
+
+@media(max-height:650px){
+
+  /* PAGE 1 */
+
+  .envelope-title{
+
+    margin-bottom:15px;
+  }
+
+
+  .my-envelope{
+
+    width:
+      min(
+        55vw,
+        250px
+      );
+
+    margin-bottom:15px;
+  }
+
+
+  .tap-text{
+
+    font-size:30px;
+  }
+
+
+  /* PAGE 2 */
+
+  #p2 .my-envelope-design{
+
+    width:63%;
+
+  }
+
+
+  #p2 .photo-strip{
+
+    top:9%;
+
+  }
+
+
+  #p2 .birthday-text{
+
+    /*
+      DINAikkan juga untuk layar pendek
+    */
+
+    top:23%;
+
+  }
+
+
+  #p2 .birthday-text h1{
+
+    font-size:50px;
+
+  }
+
+
+  #p2 .tap-text{
+
+    bottom:4%;
+
+  }
+
+
+  /* PAGE 3 */
+
+  .heading{
+
+    margin-bottom:20px;
+  }
+
+}
+
+
+/* ==================================================
+   TABLET / DESKTOP
+================================================== */
+
+@media(min-width:601px){
+
+  #p2 .birthday-card{
+
+    max-width:540px;
+
+    max-height:540px;
+
+  }
+
+
+  #p2 .my-envelope-design{
+
+    width:72%;
+
+  }
+
+
+  #p2 .photo-strip{
+
+    width:55%;
+
+  }
+
+
+  #p2 .birthday-text{
+
+    width:53%;
+
+    top:24.5%;
+
+  }
+
+}
+
+/* ==================================================
+   PAGE 5 - CALENDAR
+   EXTRA LARGE MOBILE VERSION
+================================================== */
+
+#p5{
+  position:absolute;
+  inset:0;
+
+  width:100%;
+  height:100%;
+
+  display:flex;
+  flex-direction:column;
+
+  justify-content:center;
+  align-items:center;
+
+  overflow:hidden;
+
+  padding:10px 5px;
+
+  background:
+    radial-gradient(
+      circle at 50% 35%,
+      rgba(255,255,255,.035),
+      transparent 45%
+    ),
+    #5b0710;
+}
+
+
+/* ==================================================
+   CALENDAR CONTAINER
+================================================== */
+
+#p5 .calendar-photo{
+
+  position:relative;
+
+  width:380px !important;
+
+  max-width:380px !important;
+
+  height:auto;
+
+  margin:0 auto;
+
+  padding:0;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  background:transparent !important;
+
+  border:none !important;
+
+  box-shadow:none !important;
+
+}
+
+
+/* ==================================================
+   CALENDAR IMAGE
+================================================== */
+
+#p5 .calendar-photo img{
+
+  display:block;
+
+  width:380px !important;
+
+  max-width:380px !important;
+
+  height:auto !important;
+
+  max-height:64vh;
+
+  object-fit:contain;
+
+  object-position:center;
+
+  margin:0 auto;
+
+  padding:0 !important;
+
+  background:transparent !important;
+
+  border:none !important;
+
+  border-radius:0 !important;
+
+  box-shadow:none !important;
+
+  outline:none;
+
+  filter:
+    drop-shadow(
+      0 14px 22px
+      rgba(0,0,0,.35)
+    );
+
+  user-select:none;
+
+  pointer-events:none;
+
+}
+
+
+/* ==================================================
+   TEXT BAWAH
+================================================== */
+
+#p5 .sub{
+
+  position:relative;
+
+  z-index:5;
+
+  margin-top:14px;
+
+  text-align:center;
+
+  white-space:nowrap;
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:18px;
+
+  font-weight:500;
+
+  font-style:italic;
+
+  letter-spacing:.2px;
+
+  color:#f2d7d3;
+}
+
+
+#p5 .sub::before{
+
+  content:"♡";
+
+  margin-right:6px;
+
+  color:#d9a1a0;
+}
+
+
+#p5 .sub::after{
+
+  content:" ✦";
+
+  margin-left:6px;
+
+  color:#d9a1a0;
+}
+
+
+/* ==================================================
+   SPARKLE
+================================================== */
+
+#p5::before{
+
+  content:"✦";
+
+  position:absolute;
+
+  top:11%;
+
+  left:6%;
+
+  color:#fff;
+
+  font-size:13px;
+
+  opacity:.8;
+
+  pointer-events:none;
+
+}
+
+
+#p5::after{
+
+  content:"✧";
+
+  position:absolute;
+
+  top:17%;
+
+  right:7%;
+
+  color:#fff;
+
+  font-size:12px;
+
+  opacity:.7;
+
+  pointer-events:none;
+
+}
+
+
+/* ==================================================
+   HP KECIL
+================================================== */
+
+@media(max-width:380px){
+
+  #p5{
+
+    padding:
+      5px
+      2px;
+  }
+
+
+  #p5 .calendar-photo{
+
+    width:350px !important;
+
+    max-width:350px !important;
+
+  }
+
+
+  #p5 .calendar-photo img{
+
+    width:350px !important;
+
+    max-width:350px !important;
+
+    max-height:61vh;
+
+  }
+
+
+  #p5 .sub{
+
+    margin-top:10px;
+
+    font-size:15px;
+
+  }
+
+}
+
+
+/* ==================================================
+   HP NORMAL
+================================================== */
+
+@media(
+  min-width:381px
+) and (
+  max-width:600px
+){
+
+  #p5 .calendar-photo{
+
+    width:380px !important;
+
+    max-width:380px !important;
+
+  }
+
+
+  #p5 .calendar-photo img{
+
+    width:380px !important;
+
+    max-width:380px !important;
+
+    max-height:64vh;
+
+  }
+
+}
+
+
+/* ==================================================
+   LAYAR PENDEK
+================================================== */
+
+@media(max-height:650px){
+
+  #p5 .calendar-photo{
+
+    width:330px !important;
+
+    max-width:330px !important;
+
+  }
+
+
+  #p5 .calendar-photo img{
+
+    width:330px !important;
+
+    max-width:330px !important;
+
+    max-height:54vh;
+
+  }
+
+
+  #p5 .sub{
+
+    margin-top:7px;
+
+    font-size:14px;
+
+  }
+
+}
+
+
+/* ==================================================
+   DESKTOP
+================================================== */
+
+@media(min-width:601px){
+
+  #p5 .calendar-photo{
+
+    width:400px !important;
+
+    max-width:400px !important;
+
+  }
+
+
+  #p5 .calendar-photo img{
+
+    width:400px !important;
+
+    max-width:400px !important;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+<main
+  class="book"
+  id="book"
+>
+
+
+<!-- ==================================================
+     SLIDE 1
+================================================== -->
+
+<section
+  class="page active envelope-page"
+  id="p1"
+>
+
+
+<div class="sparkles">
+
+<span>✦</span>
+<span>✧</span>
+<span>✦</span>
+<span>✧</span>
+
+</div>
+
+
+<div class="envelope-title">
+
+Press The Envelope
+
+</div>
+
+
+<!--
+==================================================
+ ENVELOPE MILIK KAMU
+
+ GANTI envelope.png DENGAN ICON/GAMBAR ENVELOPE KAMU
+==================================================
+-->
+
+<img
+  src="envelope.jpg"
+  id="myEnvelope"
+  class="my-envelope"
+  alt="Envelope"
+  role="button"
+  tabindex="0"
+  draggable="false"
+  onclick="openEnvelope(event)"
+  onkeydown="if(event.key==='Enter' || event.key===' ') openEnvelope(event)"
+>
+
+
+<div
+  class="tap-text"
+  onclick="openEnvelope(event)"
+  role="button"
+  tabindex="0"
+  onkeydown="if(event.key==='Enter' || event.key===' ') openEnvelope(event)"
+>
+  tap to start
+</div>
+
+
+</section>
+
+
+
+<!-- ==================================================
+     SLIDE 2 - OPEN ENVELOPE
+================================================== -->
+
+<section
+  class="page"
+  id="p2"
+>
+
+  <div class="birthday-card">
+
+    <!-- ==========================================
+         GAMBAR ENVELOPE MILIK KAMU
+         
+         GANTI nama file jika perlu.
+         Misalnya: envelope.jpg
+    =========================================== -->
+
+    <img
+      src="envelope.png"
+      class="my-envelope-design"
+      alt="Birthday Envelope"
+      draggable="false"
+      onerror="this.onerror=null; this.src='envelope.jpg';"
+    >
+
+
+    <!-- ==========================================
+         FOTO KAMU
+         
+         FOTO INI TETAP DARI SOURCE CODE
+    =========================================== -->
+
+
+
+
+    <!-- ==========================================
+         TULISAN DI ATAS KERTAS ENVELOPE
+    =========================================== -->
+
+    <div class="birthday-text">
+
+      <div class="tiny-heart">
+        
+      </div>
+
+      <h1>
+  
+      </h1>
+
+      <div class="ornament">
+  
+      </div>
+
+      <div class="letter-name">
+     
+      </div>
+
+      <div class="letter-date">
+       
+      </div>
+
+    </div>
+
+
+    <!-- ==========================================
+         NEXT
+    =========================================== -->
+
+    <div
+      class="tap-text"
+      onclick="go(3)"
+      style="
+        margin-top:18px;
+        cursor:pointer;
+      "
+    >
+      Tap For Surprise
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ==================================================
+     SLIDE 3
+================================================== -->
+
+<section
+  class="page"
+  id="p3"
+>
+
+
+<div class="sparkles">
+
+<span>✦</span>
+<span>✧</span>
+<span>✦</span>
+<span>✧</span>
+
+</div>
+
+
+<h1 class="heading">
+
+Choose The Surprise
+
+</h1>
+
+
+<div class="surprises">
+
+
+<button
+  class="surprise"
+  onclick="go(4)"
+>
+
+<div class="iconbox">
+
+🌸
+
+</div>
+
+<span class="label">
+
+Moment
+
+</span>
+
+</button>
+
+
+
+<button
+  class="surprise"
+  onclick="go(5)"
+>
+
+<div class="iconbox">
+
+📅
+
+</div>
+
+<span class="label">
+
+The Day
+
+</span>
+
+</button>
+
+
+
+<button
+  class="surprise"
+  onclick="go(6)"
+>
+
+<div class="iconbox">
+
+🎵
+
+</div>
+
+<span class="label">
+
+Playlist
+
+</span>
+
+</button>
+
+
+
+<button
+  class="surprise"
+  onclick="go(7)"
+>
+
+<div class="iconbox">
+
+🎁
+
+</div>
+
+<span class="label">
+
+Gift
+
+</span>
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- ==================================================
+     SLIDE 4 - MOMENT
+================================================== -->
+
+<section
+  class="page"
+  id="p4"
+>
+
+
+<div class="split">
+
+
+<div>
+
+
+<h1 class="big-title">
+
+HAPPY<br>
+BIRTHDAY<br>
+
+<em>
+Aiman Afnan
+</em>
+
+</h1>
+
+
+<div class="sub">
+
+the one we're celebrating today.
+
+</div>
+
+
+</div>
+
+
+<div class="collage">
+
+
+<div
+  class="polaroid"
+  style="--r:-5deg"
+>
+
+<img src="foto1.jpg">
+
+</div>
+
+
+<div
+  class="polaroid"
+  style="--r:4deg"
+>
+
+<img src="foto2.jpg">
+
+</div>
+
+
+<div
+  class="polaroid"
+  style="--r:-2deg"
+>
+
+<img src="foto3.jpg">
+
+</div>
+
+
+<div
+  class="polaroid"
+  style="--r:3deg"
+>
+
+<img src="foto4.jpg">
+
+</div>
+
+
+<div
+  class="polaroid"
+  style="--r:-4deg"
+>
+
+<img src="foto5.jpg">
+
+</div>
+
+
+<div
+  class="polaroid"
+  style="--r:5deg"
+>
+
+<img src="foto6.jpg">
+
+</div>
+
+
+<div
+  class="polaroid"
+  style="--r:-3deg"
+>
+
+<img src="foto7.jpg">
+
+</div>
+
+
+<div
+  class="polaroid"
+  style="--r:4deg"
+>
+
+<img src="foto8.jpg">
+
+</div>
+
+
+<div
+  class="polaroid"
+  style="--r:-5deg"
+>
+
+<img src="foto9.jpg">
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ==================================================
+     SLIDE 5 - THE DAY
+================================================== -->
+
+<section
+  class="page"
+  id="p5"
+>
+
+
+  <!-- FOTO PENGGANTI KALENDER -->
+
+  <div class="calendar-photo">
+
+    <img
+      src="kalender.png"
+      alt="Birthday Memory"
+    >
+
+  </div>
+
+
+  <div class="sub">
+
+    the date we get to celebrate you ✦
+
+  </div>
+
+
+</section>
+
+
+<!-- ==================================================
+     SLIDE 6 - PLAYLIST
+================================================== -->
+
+<section
+  class="page"
+  id="p6"
+>
+
+
+<div class="content-card">
+
+
+<h2>
+
+Our Playlist
+
+</h2>
+
+
+<p>
+
+Put your favorite song here and let it play while reading this little surprise.
+
+</p>
+
+
+<audio
+  id="player"
+  controls
+>
+
+<source
+  src="music.mp3"
+  type="audio/mpeg"
+>
+
+</audio>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- ==================================================
+     SLIDE 7 - FINAL MESSAGE
+================================================== -->
+
+<section
+  class="page"
+  id="p7"
+>
+
+  <div
+    class="content-card"
+    style="
+      margin-top:20px;
+    "
+  >
+
+    <h2>For You</h2>
+
+    <p>
+  HAPPY BIRTHDAY AIMAN AFNAN YANG KE-18 TAHUN 🎊🥳🥳🫂🤍
+</p>
+
+<p>
+  Dalam 14 tahun aku hidup, tak pernah aku sangka akan ada begitu banyak memori
+  yang aku simpan dan tunggu selama ini. Tapi kalau orang tanya aku,
+  “Kau tak rindu abang kau kah?” aku selalu jawab,
+  “Tak, buat apa nak rindu, nanti jumpa jugak.”
+  Padahal sebenarnya aku rindu giler, lagi-lagi time hampir 3 minggu tak jumpa kau.
+</p>
+
+<p>
+  Sampailah satu hari tu, tiba-tiba ibu ajak pergi melawat abang dekat POLIKU.
+  Masa tu aku happy giler sebenarnya, tapi aku tak tunjuk pun yang aku happy.
+  Lepas tu bila kau datang, kau ingat tak aku terus peluk kau?
+  Tapi aku tak tahu lah kau terkejut ke tak HAHAHAH.
+  *Dengan ada Syaqer gik ya* 😭
+</p>
+
+<p>
+  Aku harap kau sihat selalu, dimurahkan rezeki dan dipanjangkan umur.
+  Aku harap kau makin berjaya suatu hari kelak.
+  Aku harap jurusan yang kau pilih, perniagaan, kau makin score dan berjaya.
+  Jangan lupa juga anok adik kau yang imut tok HAHAHAH, gurau je.
+</p>
+
+<p>
+  Aku sayang abang sampai bila-bila 🤍🤍
+  Lopeee u.
+  Aku buat awal-awal sebab nanti time birthday kau, aku dah masuk asrama balik.
+  Maksehhh sebab selalu jaga aku time demam dulu.
+  Sayang kau 🤍
+</p>
+
+<p>
+  Kau boh lupa nak kelaka dengan ibu dekat rumah.
+  Mun kau kelaka dengan ibu, sekurang-kurangnya ibu tak rasa sunyi ajak.
+  Maksehhh juak sebab selalu dengar curhat aku.
+  Lovee u AIMAN AFNAN 🤍
+</p>
+
+<p>
+  You're my only sibling.
+  Jagaaa diri okeyyyy 🤍🤍
+  I love youu 🤍
+</p>
+
+<p>
+  Mun aku mati dolok sebelum kau sempat maafkan aku kalau aku ada salah dengan kau,
+  aku minta maaf gilak-gilak.
+  Kalau kau pernah rasa aku ni adik yang tak berguna bagi kau,
+  aku minta maaf.
+  Aku dah cuba untuk jadi adik yang terbaik untuk kau 🤍🤍
+</p>
+
+<p>
+  ADEKK SAYANGG ABANGG SAMPE HUJUNG HAYATT 🤍🤍
+</p>
+
+  </div>
+
+</section>
+
+<!-- ==================================================
+     NAVIGATION
+================================================== -->
+
+<div
+  class="nav"
+  id="nav"
+  style="display:none"
+>
+
+
+<button
+  type="button"
+  onclick="prev()"
+>
+
+‹
+
+</button>
+
+
+<div
+  class="dots"
+  id="dots"
+></div>
+
+
+<button
+  type="button"
+  onclick="next()"
+>
+
+›
+
+</button>
+
+
+</div>
+
+
+</main>
+
+</div>
+
+
+
+<!-- ==================================================
+     BACKGROUND MUSIC
+================================================== -->
+
+<audio
+  id="bgMusic"
+  loop
+  preload="auto"
+>
+
+<source
+  src="music.mp3"
+  type="audio/mpeg"
+>
+
+</audio>
+
+
+
+<script>
+
+/* ==================================================
+   PAGE SYSTEM
+================================================== */
+
+const totalPages = 7;
+
+let currentPage = 1;
+
+let musicStarted = false;
+
+
+const pages = [];
+
+for(
+  let i = 1;
+  i <= totalPages;
+  i++
+){
+
+  pages.push(
+    document.getElementById(
+      "p" + i
+    )
+  );
+
+}
+
+
+/* ==================================================
+   RENDER PAGE
+================================================== */
+
+function renderPage(){
+
+  pages.forEach(
+    (page,index)=>{
+
+      if(page){
+        page.classList.toggle(
+          "active",
+          index === currentPage - 1
+        );
+      }
+
+    }
+  );
+
+
+  const nav =
+    document.getElementById(
+      "nav"
+    );
+
+
+  nav.style.display =
+    currentPage === 1
+      ? "none"
+      : "flex";
+
+
+  const dots =
+    document.getElementById(
+      "dots"
+    );
+
+
+  dots.innerHTML = "";
+
+
+  for(
+    let i = 1;
+    i <= totalPages;
+    i++
+  ){
+
+    const dot =
+      document.createElement(
+        "span"
+      );
+
+
+    dot.className =
+      "dot" +
+      (
+        i === currentPage
+          ? " active"
+          : ""
+      );
+
+
+    dots.appendChild(dot);
+
+  }
+
+}
+
+
+/* ==================================================
+   CHANGE PAGE
+================================================== */
+
+function go(page){
+
+  if(
+    page < 1 ||
+    page > totalPages
+  ){
+
+    return;
+
+  }
+
+
+  currentPage = page;
+
+  renderPage();
+
+  createHearts();
+
+}
+
+
+/* ==================================================
+   NEXT
+================================================== */
+
+function next(){
+
+  if(
+    currentPage < totalPages
+  ){
+
+    go(
+      currentPage + 1
+    );
+
+  }
+
+}
+
+
+/* ==================================================
+   PREVIOUS
+================================================== */
+
+function prev(){
+
+  if(
+    currentPage > 1
+  ){
+
+    go(
+      currentPage - 1
+    );
+
+  }
+
+}
+
+
+/* ==================================================
+   START MUSIC
+================================================== */
+
+function startMusic(){
+
+  const music =
+    document.getElementById(
+      "bgMusic"
+    );
+
+
+  if(
+    musicStarted
+  ){
+
+    return;
+
+  }
+
+
+  musicStarted = true;
+
+
+  music.volume = 0.45;
+
+
+  const playPromise =
+    music.play();
+
+
+  if(
+    playPromise !== undefined
+  ){
+
+    playPromise
+      .then(
+        ()=>{
+          console.log(
+            "Music started"
+          );
+        }
+      )
+      .catch(
+        error=>{
+          console.log(
+            "Autoplay diblokir browser:",
+            error
+          );
+        }
+      );
+
+  }
+
+}
+
+
+/* ==================================================
+   ENVELOPE CLICK
+================================================== */
+
+let envelopeOpened = false;
+
+function openEnvelope(event){
+
+  if(event){
+    event.preventDefault();
+    event.stopPropagation();
+  }
+
+  // Cegah double click.
+  if(envelopeOpened) return;
+  envelopeOpened = true;
+
+  const envelope =
+    document.getElementById("myEnvelope");
+
+  // Animasi hanya jika gambar envelope ditemukan.
+  if(envelope){
+    envelope.classList.add("touching");
+  }
+
+  // Musik dimulai setelah user melakukan tap/click.
+  startMusic();
+
+  // Efek hati.
+  createHearts();
+
+  // Tetap pindah ke Page 2 walaupun gambar gagal dimuat.
+  setTimeout(function(){
+
+    if(envelope){
+      envelope.classList.remove("touching");
+    }
+
+    go(2);
+
+  }, 350);
+}
+
+
+/* ==================================================
+   FLOATING HEARTS
+================================================== */
+
+function createHearts(){
+
+  const book =
+    document.getElementById(
+      "book"
+    );
+
+
+  for(
+    let i = 0;
+    i < 8;
+    i++
+  ){
+
+    setTimeout(
+      ()=>{
+
+        const heart =
+          document.createElement(
+            "div"
+          );
+
+
+        heart.className =
+          "heart";
+
+
+        heart.textContent =
+          Math.random() > .5
+            ? "♥"
+            : "♡";
+
+
+        heart.style.left =
+          (
+            Math.random() * 100
+          ) + "%";
+
+
+        heart.style.fontSize =
+          (
+            12 +
+            Math.random() * 18
+          ) + "px";
+
+
+        heart.style.setProperty(
+          "--drift",
+          (
+            (Math.random() - .5) * 130
+          ) + "px"
+        );
+
+
+        heart.style.animationDuration =
+          (
+            3 +
+            Math.random() * 2
+          ) + "s";
+
+
+        book.appendChild(
+          heart
+        );
+
+
+        setTimeout(
+          ()=>{
+
+            heart.remove();
+
+          },
+          6000
+        );
+
+
+      },
+      i * 120
+    );
+
+  }
+
+}
+
+
+/* ==================================================
+   SWIPE MOBILE
+================================================== */
+
+let startX = 0;
+
+let startY = 0;
+
+
+const book =
+  document.getElementById(
+    "book"
+  );
+
+
+book.addEventListener(
+  "touchstart",
+  function(e){
+
+    startX =
+      e.changedTouches[0]
+        .screenX;
+
+    startY =
+      e.changedTouches[0]
+        .screenY;
+
+  },
+  {
+    passive:true
+  }
+);
+
+
+book.addEventListener(
+  "touchend",
+  function(e){
+
+    const endX =
+      e.changedTouches[0]
+        .screenX;
+
+    const endY =
+      e.changedTouches[0]
+        .screenY;
+
+
+    const distanceX =
+      endX - startX;
+
+    const distanceY =
+      endY - startY;
+
+
+    /*
+      hanya dianggap swipe
+      kalau gerakan horizontal
+      lebih besar dari vertikal
+    */
+
+    if(
+      Math.abs(distanceX) > 50 &&
+      Math.abs(distanceX) >
+      Math.abs(distanceY)
+    ){
+
+      if(
+        distanceX < 0
+      ){
+
+        next();
+
+      }else{
+
+        prev();
+
+      }
+
+    }
+
+  },
+  {
+    passive:true
+  }
+);
+
+
+/* ==================================================
+   KEYBOARD
+================================================== */
+
+document.addEventListener(
+  "keydown",
+  function(e){
+
+    if(
+      e.key === "ArrowRight"
+    ){
+
+      next();
+
+    }
+
+
+    if(
+      e.key === "ArrowLeft"
+    ){
+
+      prev();
+
+    }
+
+  }
+);
+
+
+/* ==================================================
+   INIT
+================================================== */
+
+renderPage();
+
+/*
+  Fallback klik Page 1:
+  kalau user menekan area envelope atau teks,
+  Page 2 tetap terbuka.
+*/
+const page1 = document.getElementById("p1");
+
+if(page1){
+
+  page1.addEventListener("click", function(e){
+
+    const clickedEnvelope =
+      e.target.closest("#myEnvelope");
+
+    const clickedTap =
+      e.target.closest(".tap-text");
+
+    if(clickedEnvelope || clickedTap){
+      openEnvelope(e);
+    }
+
+  });
+
+}
+
+</script>
+
+
+</body>
+
+</html>
